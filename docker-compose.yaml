@@ -6,9 +6,12 @@ services:
       context: ./beamium    
       args:
       - hostname=YOUR_HOST
+      # With /api/v0/update
       - warp10_endpoint=YOUR_ENDPOINT
       - warp10_token=YOUR_TOKEN
     links:
+    - noderig:noderig
+    depends_on:
     - noderig
   
   noderig:
