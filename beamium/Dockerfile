@@ -16,10 +16,10 @@ ENV BEAMIUM_PATH /opt/beamium
 WORKDIR $BEAMIUM_PATH
 RUN git clone https://github.com/runabove/beamium $BEAMIUM_PATH
 
-ADD config.yaml .
-RUN envsubst < config.yaml
+ADD config.template .
+RUN envsubst < config.template > config.yaml
 RUN cat config.yaml
 
-RUN cargo build
+#RUN cargo build --release   
 
 ENTRYPOINT cargo run --release
