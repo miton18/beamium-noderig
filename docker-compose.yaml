@@ -1,0 +1,19 @@
+version: '2'
+services:
+  
+  beamium:
+    build: 
+      context: ./beamium    
+      args:
+      - hostname=YOUR_HOST
+      - warp10_endpoint=YOUR_ENDPOINT
+      - warp10_token=YOUR_TOKEN
+    links:
+    - noderig
+  
+  noderig:
+    build: ./noderig
+    ports:
+     - "9100:9100"
+    volumes:
+    - /proc:/proc:ro
