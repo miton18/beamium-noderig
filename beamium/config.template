@@ -1,6 +1,6 @@
 sources:
   noderig:
-    url: http://noderig/metrics
+    url: http://noderig:9100/metrics
     period: 10000
     format: sensision
 

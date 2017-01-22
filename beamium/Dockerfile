@@ -20,6 +20,6 @@ ADD config.template .
 RUN envsubst < config.template > config.yaml
 RUN cat config.yaml
 
-#RUN cargo build --release   
+RUN cargo build --release   
 
 ENTRYPOINT cargo run --release
