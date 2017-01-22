@@ -2,6 +2,7 @@ sources:
   noderig:
     url: http://noderig/metrics
     period: 10000
+    format: sensision
 
 sinks:
   localhost:

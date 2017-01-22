@@ -1,6 +1,6 @@
 version: '2'
 services:
-  
+
   beamium:
     build: 
       context: ./beamium    
@@ -15,5 +15,3 @@ services:
     build: ./noderig
     ports:
      - "9100:9100"
-    volumes:
-    - /proc:/proc:ro

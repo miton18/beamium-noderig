@@ -1,7 +1,2 @@
-cpu: 1
-mem: 1
-load: 1
-disk: 1
-net: 1
 period: 10000
 listen: 127.0.0.1:9100

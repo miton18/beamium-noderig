@@ -22,4 +22,4 @@ RUN cat config.yaml
 
 RUN cargo build
 
-ENTRYPOINT cargo run
+ENTRYPOINT cargo run --release
