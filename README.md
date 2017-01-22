@@ -8,7 +8,7 @@ Contains 2 components :
 
 Replace 3 parameters in `docker-compose.yaml` :
 - hostname
-- warp10_endpoint (Ex: https://warp.domain.tld)
+- warp10_endpoint (Ex: https://warp.domain.tld/api/v0/update)
 - warp10_token
 
 # Start
