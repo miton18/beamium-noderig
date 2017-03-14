@@ -9,7 +9,7 @@ ENV WARP10_TOKEN $warp10_token
 ENV HOSTNAME $hostname
 
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install git libssl-dev gettext -y
+RUN apt-get install git libssl-dev gettext pkg-config -y
 RUN rm -rf /var/lib/apt/lists/*
 
 ENV BEAMIUM_PATH /opt/beamium
